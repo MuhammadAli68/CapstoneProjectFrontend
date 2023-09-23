@@ -8,7 +8,7 @@ const app = express();
 app.get('/client',(req,res)=>{
     let file = '';
     let Checksum = '';
-    axios.get('http://localhost:3000/file')
+    axios.get('http://server:3000/file')
   .then((response) => {
     if(response.data)
     {
